@@ -79,7 +79,12 @@
 			<h3>
 				<strong>Step three:</strong> Theming JellyLock</h3>
 			<div>
-				This section has been updated for the latest version of JellyLock (v0.0.8 and onwards). * Firstly, navigate to &quot;/Library/Application Support/JellyLock/Contents/Resources/&quot;. * Then copy the contents of &quot;iMIUI-JellyLock-mods/themes/default&quot; and paste them in &#39;Resources&#39;. For theming shortcuts, iMIUI includes a few (with more to come soon) which need to be placed in &quot;shortcutIcons&quot;. For them to work, you will need to rename them like so: com.app.identifier.png - we recommend downloading the Cydia app &#39;AppInfo&#39; (free on BigBoss repo) to help with this. Detailed information is available on the <a href="http://mkatzmann.blogspot.co.uk/2013/05/how-to-theme-jellylock.html" target="_blank">developer&#39;s blog</a>. More support for the latest version will be coming soon!</div>
+				This section has been updated for the latest version of JellyLock (v0.0.8 and onwards). 
+			<ul>	<li>Firstly, navigate to &quot;/Library/Application Support/JellyLock/Contents/Resources/&quot;. </li>
+				<li>Then copy the contents of &quot;iMIUI-JellyLock-mods/themes/default&quot; and paste them in &#39;Resources&#39;.</li></ul> 
+				For theming shortcuts, iMIUI includes a few (with more to come soon) which need to be placed in &quot;shortcutIcons&quot;. 
+				For them to work, you will need to rename them like so: com.app.identifier.png - we recommend downloading the Cydia app &#39;AppInfo&#39; (free on BigBoss repo) to help with this. 
+				Detailed information is available on the <a href="http://mkatzmann.blogspot.co.uk/2013/05/how-to-theme-jellylock.html" target="_blank">developer&#39;s blog</a>. More support for the latest version will be coming soon!</div>
 		</div>
 		<div class="gk-toggle closed">
 			<h3>
@@ -88,6 +93,6 @@
 				After downloading the mod from our <a href="http://onehalfkiller.com/imiui/downloads/" title="Downloads">Downloads</a> section, go to &quot;/Library/Application Support/ActiveDock/Contents/Resources/&quot;. Now just replace &#39;Dock@2x.png&#39; with the one you downloaded.</div>
 		</div>
 		<p>
-			&nbsp; -</p>
+		</p>
 	</body>
 </html>
