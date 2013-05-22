@@ -1,0 +1,104 @@
+<html>
+<head>
+<img src="LockBackground.png" style="position:absolute; top:0px; left:0px; width:320px; height:568px; z-index:-99;">
+<script>
+var Clock = "24h";
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var months=["01","02","03","04","05","06","07","08","09","10","11","12"];
+function updateClock() {
+var currentTime = new Date();
+var currentHours = currentTime.getHours();
+var currentMinutes = currentTime.getMinutes() < 10 ? '0' + currentTime.getMinutes() : currentTime.getMinutes();
+var currentDate = currentTime.getDate() < 10 ? '0' + currentTime.getDate() : currentTime.getDate();
+var currentYear = currentTime.getFullYear();
+timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+if (Clock == "24h") {
+timeOfDay = "";
+currentHours = ( currentHours < 10 ? "0" : "" ) + currentHours;
+currentTimeString = currentHours + ":" + currentMinutes;}
+if (Clock == "12h") {
+currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+currentTimeString = currentHours + ":" + currentMinutes;}
+document.getElementById("hour").innerHTML = currentHours;
+document.getElementById("minute").innerHTML = currentMinutes;
+document.getElementById("ampm").innerHTML = timeOfDay;
+document.getElementById("weekday").innerHTML = days[currentTime.getDay()];
+document.getElementById("date").innerHTML = currentDate;
+document.getElementById("month").innerHTML = months[currentTime.getMonth()];}
+function init(){
+updateClock();
+setInterval("updateClock();", 1000);}
+</script>
+<style>
+@font-face {font-family: "digiclock"; src: url('Fonts/iMIUI-Clock.ttf');}
+body {
+position:absolute;
+width:320px; 
+height:568px; 
+top:0px; 
+left:0px;
+margin: 0;
+padding: 0;
+opacity:0;
+color: #fff;
+-webkit-animation: fadein 2s linear 1 normal;
+-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes fadein{
+0%	{opacity : 0;}
+50%	{opacity : 0.5;}
+100%	{opacity : 1.0;}}
+#Clock{
+position:absolute;
+letter-spacing:-32px;
+top:64px; 
+left:-16px;
+text-align:center; 
+width:320px; 
+font-family:digiclock;
+font-size:64px;
+background: -webkit-linear-gradient(#fff, #c7dfed);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow:0px 5px 8px rgba(0,0,0,0.10);
+}
+#hour{
+font-family:digiclock;
+font-size:64px;
+}
+#ampm{
+display:none;
+}
+#Calendar{
+position:absolute;
+top:130px;
+right:0px;
+left:0px;
+text-align:center;
+width:320px;
+font-family:helvetica;
+font-size:16px;
+text-shadow:0px 5px 8px rgba(0,0,0,0.10);
+opacity : 1.0;
+}
+#tiret{
+font-size:64px; 
+margin-right:-10px; 
+margin-left:-10px;
+}
+#weekday{
+font-size:16px;
+}
+</style>
+</head>
+<body onLoad="init()">  
+<div id="Clock">
+<a id="hour"></a><a id="tiret">:</a><a id="minute"></a><a id="ampm"></a>
+</div>
+<div id="Calendar">
+</a><a id="space"> </a><a id="date"><a id="space">/</a></a><a id="month"></a><a id="space">/</a><a id="space">2013</a><br />
+<a id="weekday"></a>
+</div>
+</body>
+</html>
