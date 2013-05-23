@@ -4,9 +4,9 @@
 	</head>
 	<body>
 		<p style="text-align: center;">
-			<img alt="" src="http://onehalfkiller.com/imiui/wp-content/uploads/2013/05/howto.png" /></p>
+			<img alt="" src="http://onehalfkiller.com/imiui/wp-content/themes/imiui/images/style1/logo.png" /></p>
 		<p>
-			This tutorial will explain how to get the most out of iMIUI! Firstly, you will need the following tweaks from Cydia - we&#39;ve also created a list of optional tweaks that we recommend:</p>
+			Read the Wiki as it explain how to get the most out of iMIUI! Firstly, you will need the following tweaks from Cydia - we&#39;ve also created a list of optional tweaks that we recommend:</p>
 		<div class="gk-toggle opened">
 			<h3>
 				Required tweaks</h3>
